@@ -57,6 +57,16 @@ var properties = [{
   }
 },
 {
+  value: "link_post",
+  label: "Link to post",
+  table: {
+    visible: true,
+    sortable: true,
+    formatter: urlFormatter
+  },
+  filter: false
+},
+{
   value: "property_addr",
   label: "Address",
   table: {
@@ -226,16 +236,6 @@ var properties = [{
   filter: {
     type: "string"
   } 
-},
-{
-  value: "link_post",
-  label: "Link to post",
-  table: {
-    visible: true,
-    sortable: true,
-    formatter: urlFormatter
-  },
-  filter: false
 },
 {
   value: "link_g",
