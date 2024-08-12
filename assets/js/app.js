@@ -1,5 +1,5 @@
 var config = {
-  geojson: "https://web.fulcrumapp.com/shares/a5c8e07368efde43.geojson",
+  geojson: "https://raw.githubusercontent.com/mineear/mineear.github.io/main/assets/data.geojson",
   title: "Listings",
   layerName: "Listings",
   hoverProperty: "property_name",
