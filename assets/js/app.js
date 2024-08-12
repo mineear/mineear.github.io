@@ -195,6 +195,39 @@ var properties = [{
   }
 },
 {
+  value: "district",
+  label: "Notes",
+  table: {
+    visible: false,
+    sortable: true
+  },
+  filter: {
+    type: "string"
+  }
+},
+{
+  value: "subdistrict",
+  label: "Notes",
+  table: {
+    visible: false,
+    sortable: true
+  },
+  filter: {
+    type: "string"
+  }
+},
+{
+  value: "province",
+  label: "Notes",
+  table: {
+    visible: false,
+    sortable: true
+  },
+  filter: {
+    type: "string"
+  }
+},
+{
   value: "link_url",
   label: "Link",
   table: {
