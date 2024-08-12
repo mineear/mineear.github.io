@@ -11,8 +11,8 @@ var properties = [{
   value: "status",
   label: "Status",
   table: {
-    visible: true,
-    sortable: true
+    visible: false,
+    sortable: false
   },
   filter: {
     type: "string",
@@ -57,6 +57,17 @@ var properties = [{
   }
 },
 {
+  value: "property_addr",
+  label: "Address",
+  table: {
+    visible: true,
+    sortable: false
+  },
+  filter: {
+    type: "string"
+  }
+},
+{
   value: "property_project",
   label: "Project",
   table: {
@@ -90,17 +101,6 @@ var properties = [{
   }
 },
 {
-  value: "property_year_th",
-  label: "Year TH",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "string"
-  }
-},
-{
   value: "property_beds",
   label: "Beds",
   table: {
@@ -112,7 +112,7 @@ var properties = [{
   }
 },
 {
-  value: "baths",
+  value: "property_baths",
   label: "Baths",
   table: {
     visible: true,
@@ -196,7 +196,7 @@ var properties = [{
 },
 {
   value: "district",
-  label: "Notes",
+  label: "District",
   table: {
     visible: false,
     sortable: true
@@ -207,7 +207,7 @@ var properties = [{
 },
 {
   value: "subdistrict",
-  label: "Notes",
+  label: "Subdistrict",
   table: {
     visible: false,
     sortable: true
@@ -218,7 +218,7 @@ var properties = [{
 },
 {
   value: "province",
-  label: "Notes",
+  label: "Province",
   table: {
     visible: false,
     sortable: true
@@ -228,8 +228,18 @@ var properties = [{
   }
 },
 {
-  value: "link_url",
-  label: "Link",
+  value: "link_post",
+  label: "Link to post",
+  table: {
+    visible: true,
+    sortable: true,
+    formatter: urlFormatter
+  },
+  filter: false
+},
+{
+  value: "link_g",
+  label: "Google",
   table: {
     visible: true,
     sortable: true,
