@@ -225,7 +225,7 @@ var properties = [{
   },
   filter: {
     type: "string"
-  }
+  } 
 },
 {
   value: "link_post",
